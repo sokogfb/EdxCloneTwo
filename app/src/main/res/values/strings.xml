@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EdxClone</string>
+    <string name="edx_logo_text">edxlogo</string>
+    <string name="free_courses_from_nthe_world_s_best_nuniversities_in_your_n_pocket">Free courses from the world\'s best universities in your  pocket.</string>
+    <string name="search_courses_edx">Search Courses</string>
+    <string name="search_image_view">search_image</string>
+    <string name="log_in_text_main">Log In</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
