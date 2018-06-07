@@ -22,7 +22,8 @@
         <activity
             android:name=".LoginActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
             android:name=".SettingActivity"
             android:parentActivityName=".HomeActivity" />

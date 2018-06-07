@@ -1,5 +1,6 @@
 package com.blogspot.techtibet.edxclone;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
@@ -11,13 +12,18 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
-    Toolbar mToolbar;
+    private Toolbar mToolbar;
     private ViewPager mViewPager;
     private SectionPagerAdapter mPagerAdapter;
     private TabLayout mTablayout;
+    private LinearLayout linearLayout;
+    private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +35,8 @@ public class HomeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mViewPager=(ViewPager)findViewById(R.id.tappager);
         mTablayout=(TabLayout)findViewById(R.id.maintab);
+        linearLayout=(LinearLayout)findViewById(R.id.lineartool);
+        editText=(EditText)findViewById(R.id.edittext);
         Drawable drawable= ContextCompat.getDrawable(this,R.mipmap.ic_user);
         mToolbar.setNavigationIcon(drawable);
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -47,11 +55,29 @@ public class HomeActivity extends AppCompatActivity {
         mTablayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+                InputMethodManager imm=(InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+
+
                 if(tab.getText().equals("Courses")){
                     getSupportActionBar().setTitle("Courses");
+                    imm.hideSoftInputFromInputMethod(editText.getWindowToken(),InputMethodManager.RESULT_HIDDEN);
+                    linearLayout.setVisibility(View.INVISIBLE);
                 }
                 if(tab.getText().equals("Discovery")){
                     getSupportActionBar().setTitle("Discovery");
+                    linearLayout.setVisibility(View.VISIBLE);
+                    editText.requestFocus();
+                    View view=HomeActivity.this.getCurrentFocus();
+                    if(view!=null){
+
+                        imm.showSoftInput(editText,0);
+                        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,InputMethodManager.HIDE_IMPLICIT_ONLY);
+                    }else{
+
+                        imm.hideSoftInputFromInputMethod(editText.getWindowToken(),0);
+                    }
+
+
                 }
             }
 
