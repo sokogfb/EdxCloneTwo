@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/white"
         android:theme="@style/Base.Theme.AppCompat.Light"
         app:titleTextColor="@color/colorPrimaryDark"
         />
@@ -29,18 +28,18 @@
         app:srcCompat="@drawable/edxlogo" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/login_uname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="187dp"
         android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName" />
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/login_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -48,20 +47,20 @@
         android:layout_marginTop="244dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignStart="@+id/login_uname"
         android:layout_marginBottom="244dp"
         android:text="forgot yur password?"
         android:textColor="@color/colorPrimary" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login_btn"
         android:layout_width="217dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -103,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignStart="@+id/login_uname"
         android:layout_marginBottom="61dp"
         android:text="Facebook"
         android:textAllCaps="false"

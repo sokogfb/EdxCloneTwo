@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#065683</color>
     <color name="colorAccent">#065683</color>
     <color name="googleColor">#eb5b4c</color>
+    <color name="toolbarColor">#f7f7f7</color>
 
 </resources>

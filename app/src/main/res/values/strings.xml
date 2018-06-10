@@ -10,4 +10,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="search_for_cou_text">Search for cou...</string>
     <string name="toolbar_search_text">toolbarsearch</string>
+    <string name="course_pic_in_text">course_pic</string>
+    <string name="verified_text">VERIFIED</string>
+    <string name="conpany_name_field">Conpany name</string>
+    <string name="introduction_too_python_text">Introduction too Python..</string>
+    <string name="current_time_text">Current</string>
 </resources>
