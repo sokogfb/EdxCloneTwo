@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "228750369081",
+    "firebase_url": "https://edxclone.firebaseio.com",
+    "project_id": "edxclone",
+    "storage_bucket": "edxclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228750369081:android:2d7cd741bccb598f",
+        "android_client_info": {
+          "package_name": "com.blogspot.techtibet.edxclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228750369081-4hodhr3ktbc877oiqd91m8cecanjv6rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blogspot.techtibet.edxclone",
+            "certificate_hash": "1e726dfaf357a078e0ad14de05d2bd0516a90419"
+          }
+        },
+        {
+          "client_id": "228750369081-u9uvi7k34jm77ubtfgqla01gn3isve3a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "228750369081-u9uvi7k34jm77ubtfgqla01gn3isve3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxhA-UwK2-a0Ls6ZNC3QxVru5BXjbSKhY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228750369081-u9uvi7k34jm77ubtfgqla01gn3isve3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
